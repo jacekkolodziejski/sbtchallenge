@@ -1,0 +1,19 @@
+// source: https://github.com/metamx/tranquility/blob/master/build.sbt
+//
+
+organization := "com.tester"
+
+name := "test-19"
+
+version := "1.0"
+
+scalaVersion := "2.9.1"
+
+val akka-actorVersion = "2.3.3"
+val scalaz-coreVersion = "7.0.6"
+
+libraryDependencies ++= Seq(
+  "com.typesafe.akka" %% "akka-actor"  % akka-actorVersion,
+  "org.scalaz"        %% "scalaz-core" % scalaz-coreVersion
+)
+
